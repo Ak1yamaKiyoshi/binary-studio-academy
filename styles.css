@@ -1,0 +1,198 @@
+:root {
+    --bg_main: #3498db;
+}
+
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a blue background color to the entire header panel */
+.menu {
+    background-color: var(--bg_main);
+    color: #ffffff; /* Text color */
+    font-family: Arial, sans-serif; /* Choose an appropriate font */
+}
+
+/* Style the wrapper within the header */
+.menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style each menu element */
+.menu_element {
+    margin-right: 20px; /* Adjust spacing between menu elements */
+}
+
+/* Style the links in the menu */
+.menu_link {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color from the parent */
+}
+
+/* Style the dropdown container */
+.language_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.language_dropdown_button {
+    cursor: pointer;
+}
+
+/* Style the text within the dropdown button */
+.language_dropdown_text {
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.language_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #3498db; /* Same color as the header */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    z-index: 1;
+}
+
+/* Style each element within the dropdown content */
+.language_dropdown_element {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.language_dropdown:hover .language_dropdown_content {
+    display: block;
+}
+
+/* Style the links within the dropdown content */
+.language_dropdown_link {
+    text-decoration: none;
+    color: #ffffff; /* Text color for dropdown links */
+    margin-right: 10px; /* Adjust spacing between dropdown links */
+}
+
+
+/* PROFILE */
+/* Apply blue background color to the profile block */
+.profile {
+    background-color: #3498db;
+    color: #ffffff; /* Text color */
+    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.profile:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24); 
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Style the avatar wrapper */
+.avatar_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff; /* White border around the avatar */
+    margin-bottom: 20px; /* Adjust spacing between avatar and text */
+}
+
+/* Style the avatar image */
+.avatar_wrapper {
+    width: 240px; /* Set maximum width */
+    height: 240px; /* Set maximum height */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ffffff; /* White border around the avatar */
+    margin-bottom: 20px; /* Adjust spacing between avatar and text */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24); /* Add a subtle box shadow */
+}
+
+.avatar_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+
+/* Style the profile text container */
+.profile_text_container {
+    text-align: center; /* Center-align text */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Style the name */
+.name {
+    margin: 10px 0; /* Adjust spacing around the name */
+    text-align: center;
+    align-self: center;
+    font-size: 48px;
+}
+
+/* Style the description */
+.description {
+    margin-bottom: 20px; /* Adjust spacing between description and contact info */
+    margin-left: 5%;
+    width: 80%;
+    text-align: left;
+}
+
+/* Style the contact element */
+.contact_element {
+    padding: 4px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.contact_element:hover {
+background-color: var(--bg_main) ;
+}
+
+.contact_wrapper {
+    padding: 5px;
+    background-color: rgba(48, 39, 82, 0.226);
+    border-radius: 10px;
+
+}
+
+
+/* Style the contact icon */
+.contact_icon svg {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+    width: 24px;
+    height: 24px;
+    text-decoration: underline; /* Add underline to links */
+    color: #f5f5f5; /* Custom color for links */
+}
+/* Style the contact text and links */
+.contact_text a {
+    text-decoration: none;
+    color: #f5f5f5; /* Custom color for links */
+}
+
+/* Change link color on hover */
+.contact_text a:hover {
+    color: #ecf0f1; /* Custom color for links on hover */
+}
