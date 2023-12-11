@@ -2,100 +2,96 @@
     --bg_main: #3498db;
 }
 
-/* Reset some default styles */
-body, h1, p {
+body,
+h1,
+p {
     margin: 0;
     padding: 0;
 }
 
-/* Apply a blue background color to the entire header panel */
 .menu {
     background-color: var(--bg_main);
-    color: #ffffff; /* Text color */
-    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
-/* Style the wrapper within the header */
+
 .menu_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 10px 20px;
 }
 
-/* Style each menu element */
 .menu_element {
-    margin-right: 20px; /* Adjust spacing between menu elements */
+    margin-right: 20px;
 }
 
-/* Style the links in the menu */
+
 .menu_link {
     text-decoration: none;
-    color: inherit; /* Inherit the text color from the parent */
+    color: inherit;
 }
 
-/* Style the dropdown container */
+
 .language_dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Style the dropdown button */
+
 .language_dropdown_button {
     cursor: pointer;
 }
 
-/* Style the text within the dropdown button */
+
 .language_dropdown_text {
     margin: 0;
 }
 
-/* Style the dropdown content (hidden by default) */
 .language_dropdown_content {
     display: none;
     position: absolute;
-    background-color: #3498db; /* Same color as the header */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    background-color: #3498db;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Style each element within the dropdown content */
+
 .language_dropdown_element {
     padding: 10px;
     display: flex;
     align-items: center;
 }
 
-/* Show the dropdown content when hovering over the dropdown button */
 .language_dropdown:hover .language_dropdown_content {
     display: block;
 }
 
-/* Style the links within the dropdown content */
+
 .language_dropdown_link {
     text-decoration: none;
-    color: #ffffff; /* Text color for dropdown links */
-    margin-right: 10px; /* Adjust spacing between dropdown links */
+    color: #ffffff;
+    margin-right: 10px;
 }
 
 
 /* PROFILE */
-/* Apply blue background color to the profile block */
 .profile {
     background-color: #3498db;
-    color: #ffffff; /* Text color */
-    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 20px; /* Adjust padding as needed */
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
 .profile:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24); 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
     transition: all 0.3s ease-in-out;
 
 }
@@ -110,54 +106,52 @@ body, h1, p {
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #ffffff; /* White border around the avatar */
-    margin-bottom: 20px; /* Adjust spacing between avatar and text */
+    border: 3px solid #ffffff;
+    margin-bottom: 20px;
 }
 
 /* Style the avatar image */
 .avatar_wrapper {
-    width: 240px; /* Set maximum width */
-    height: 240px; /* Set maximum height */
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #ffffff; /* White border around the avatar */
-    margin-bottom: 20px; /* Adjust spacing between avatar and text */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24); /* Add a subtle box shadow */
+    border: 3px solid #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
 }
 
 .avatar_wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    object-fit: cover;
 }
 
 
-/* Style the profile text container */
 .profile_text_container {
-    text-align: center; /* Center-align text */
+    text-align: center;
     width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* Style the name */
+
 .name {
-    margin: 10px 0; /* Adjust spacing around the name */
+    margin: 10px 0;
     text-align: center;
     align-self: center;
     font-size: 48px;
 }
 
-/* Style the description */
+
 .description {
-    margin-bottom: 20px; /* Adjust spacing between description and contact info */
+    margin-bottom: 20px;
     margin-left: 5%;
     width: 80%;
     text-align: left;
 }
 
-/* Style the contact element */
 .contact_element {
     padding: 4px 10px;
     border-radius: 8px;
@@ -167,32 +161,171 @@ body, h1, p {
 }
 
 .contact_element:hover {
-background-color: var(--bg_main) ;
+    background-color: var(--bg_main);
 }
 
 .contact_wrapper {
     padding: 5px;
     background-color: rgba(48, 39, 82, 0.226);
     border-radius: 10px;
-
 }
 
 
-/* Style the contact icon */
+
 .contact_icon svg {
-    margin-right: 10px; /* Adjust spacing between icon and text */
+    margin-right: 10px;
     width: 24px;
     height: 24px;
-    text-decoration: underline; /* Add underline to links */
-    color: #f5f5f5; /* Custom color for links */
-}
-/* Style the contact text and links */
-.contact_text a {
-    text-decoration: none;
-    color: #f5f5f5; /* Custom color for links */
+    text-decoration: underline;
+    color: #f5f5f5;
 }
 
-/* Change link color on hover */
+.contact_text a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+
 .contact_text a:hover {
-    color: #ecf0f1; /* Custom color for links on hover */
+    color: #ecf0f1;
+}
+
+
+
+
+.skills_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.skills_element {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.skills_element_icon {
+    background-color: #3498db;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+
+.skills_element_text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.education_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.education_element {
+    margin-bottom: 20px;
+}
+
+
+.education_element_year {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.education_element_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.education_element_description {
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.timeline_element {
+    margin-bottom: 20px;
+}
+
+
+.timeline_element_year {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+
+.timeline_element_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Timeline description styles */
+.timeline_element_description {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.experience_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.experience_element {
+    margin-bottom: 20px;
+}
+
+
+.experience_element_text a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.experience_element_text a:hover {
+    text-decoration: underline;
+}
+
+
+.experience_element_description {
+    font-size: 14px;
+    color: #666;
+}
+
+.hobbys_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.hobbys_element {
+    margin-bottom: 20px;
+}
+
+
+.hobbys_element_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3498db;
 }
